@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
-<body style="font-family: 'Aldrich';">
+<body style="font-family: Aldrich, Auraka點陣宋;">
     <nav class="navbar navbar-light navbar-expand-md bg-info" style="background-color: #00647a;color: #ffffff;">
         <div class="container-fluid" style="/*padding-left: 0px;*//*margin-left: 0px;*/"><a class="navbar-brand text-light" href="#" style="color: #ffffff;">CKCSC</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav" style="font-size: 20px;">
-                    <li class="nav-item" role="presentation"><a class="nav-link active text-light" href="#" style="color: #ffffff;">關於</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active text-light" href="#about" style="color: #ffffff;">關於</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link text-light" href="#" style="color: #ffffff;">活動</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link text-light" href="#" style="color: #ffffff;">講義</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link text-light" href="#" style="font-family: DOS, Auraka, Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace;color: #ffffff;">成員</a></li>
@@ -26,16 +27,28 @@
         </div>
         </div>
     </nav>
+    <div class="simple-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/homepage-events/ckcsc.jpg&quot;);"></div>
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/homepage-events/2019summer.JPG&quot;);"></div>
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/2019summer-2.jpg&quot;);"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
     <div class="features-boxed">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center">關於</h2>
+                <h2 class="text-center" id="about" href="#" style="color: #262525;">關於</h2>
                 <div class="row" style="width: 700;">
                     <div class="col-md-6" style="width: 300;">
-                        <p class="text-center" style="font-size: 20px;width: 300;">成功電研是一群熱愛程式的高中生組成的，一起學習、成長，我們也舉辦各種活動，致力於聯繫友社情誼、推廣程式教育<br><br></p>
+                        <p class="text-center" style="font-size: 20px;width: 300;color: rgb(48,51,52);">成功電研是一群熱愛程式的高中生組成的，一起學習、成長，我們也舉辦各種活動，致力於聯繫友社情誼、推廣程式教育<br><br></p>
                     </div>
                     <div class="col-md-6" style="width: 300;">
-                        <p class="text-center" style="font-size: 20px;width: 300;">在這裡你可以盡情的揮灑青春，和朋友一起研究專題，發展屬於自己的能力。這裡永遠有一群最好的夥伴等著你<br></p>
+                        <p class="text-center" style="font-size: 20px;width: 300;color: #303334;">在這裡你可以盡情的揮灑青春，和朋友一起研究專題，發展屬於自己的能力。這裡永遠有一群最好的夥伴等著你<br></p>
                     </div>
                 </div>
             </div>
@@ -110,6 +123,7 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
 
