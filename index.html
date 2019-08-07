@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=1adc9958f1fcc2316fa58348b65ea95e">
 </head>
 
 <body style="/*font-family: Auraka點陣宋;*/background-color: #eef4f7;">
+    <div id="header"></div>
     <nav class="navbar navbar-light navbar-expand-md sticky-top bg-info text-uppercase d-lg-flex" style="background-color: #00647a;color: #ffffff;">
-        <div class="container-fluid" style="/*padding-left: 0px;*//*margin-left: 0px;*/"><a class="navbar-brand text-light" href="index.html" style="color: #ffffff;">CKCSC</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid" style="/*padding-left: 0px;*//*margin-left: 0px;*/"><a class="navbar-brand text-light" href="#header" style="color: #ffffff;">CKCSC</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav" style="font-size: 20px;">
                     <li class="nav-item" role="presentation"><a class="nav-link active text-light" href="#about" style="color: #ffffff;">關於</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="#activity" style="color: #ffffff;">活動</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="course.html" style="color: #ffffff;">課程</a></li>
-                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="#course" style="color: #ffffff;">課程</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="#class" style="color: #ffffff;">社課</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-light" style="color: #ffffff;" href="http://cgoj.cksh.tp.edu.tw/" target="_blank">線上解題系統</a></li>
                 </ul>
         </div>
         </div>
@@ -30,9 +31,9 @@
     <div class="simple-slider">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(&quot;assets/img/homepage-events/2019summer.JPG&quot;);"></div>
-                <div class="swiper-slide" style="background-image: url(&quot;assets/img/homepage-events/2019summer-2.jpg&quot;);"></div>
-                <div class="swiper-slide" style="background-image: url(&quot;assets/img/homepage-events/ckcsc.jpg&quot;);"></div>
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/homepage-events/2019summer.JPG?h=b352b47d3925550b3527cdefae427f32&quot;);"></div>
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/homepage-events/2019summer-2.jpg?h=1083584d72c4efaadf8c4dd403708754&quot;);"></div>
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/homepage-events/ckcsc.jpg?h=fee9d94acbae1c03b77e75189d4aad60&quot;);"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -40,7 +41,7 @@
         </div>
     </div>
     <div class="intro" style="margin: 40px;">
-        <h1 class="text-center" id="about" href="#" style="color: #262525;margin: 10px;padding: 10px;">關於</h1>
+        <h1 class="text-center" id="about" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">關於</h1>
         <div class="row" style="width: 700;">
             <div class="col-md-6" style="width: 300;">
                 <p class="text-center" style="font-size: 20px;width: 300;color: rgb(48,51,52);">成功電研是一群熱愛程式的高中生組成的，一起學習、成長，我們也舉辦各種活動，致力於聯繫友社情誼、推廣程式教育<br><br></p>
@@ -50,39 +51,62 @@
             </div>
         </div>
     </div>
-    <div class="text-center features-boxed">
-        <h1 class="text-center" id="activity" href="#" style="margin: 10px;padding: 10px;">活動/社課</h1>
+    <div class="projects-horizontal" style="background-color: rgba(255,255,255,0);">
         <div class="container">
-            <div class="row justify-content-center features">
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-map-marker icon"></i>
-                        <h3 class="name">地點</h3>
-                        <p class="description">一般社課位於成功高中求是樓電腦教室<br>未來規劃中午社課、放學聯合社課<br>地點預計規劃在建國中學電腦教室</p><a class="learn-more" href="#">Learn more »</a></div>
+            <div class="intro"></div>
+            <h1 class="text-center" id="course" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">課程</h1>
+            <div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row" style="background-color: #ffffff;">
+                        <div class="col-md-12 col-lg-5 text-center"><a href="#"><img class="img-fluid" src="assets/img/course/APCS-logo.png?h=1b3859d4b87de2dc516001b96cfa7973" alt="apcs"></a></div>
+                        <div class="col">
+                            <h3 class="name">APCS</h3>
+                            <p class="description">APCS大學程式設計先修檢測，藉由舉辦具公信力之「程式設計檢測」，讓具備程式設計能力之高中職學生，能夠檢驗學習成果，並供作大學選才的參考依據。</p><a href="#">講義</a></div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-clock-o icon"></i>
-                        <h3 class="name">時段</h3>
-                        <p class="description">一般社課時間是每週五第八節社團聯課活動時間，詳細時間請上成功高中首頁查詢，若育段考前、當週則停課一次。</p><a class="learn-more" href="#">Learn more »</a></div>
+                <div class="col-sm-6 item">
+                    <div class="row" style="background-color: #ffffff;">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/course/c++.png?h=bf9a6486e966ae664cb204f7a8cfbff4"></a></div>
+                        <div class="col">
+                            <h3 class="name">C/C++</h3>
+                            <p class="description">C++是一種使用廣泛的電腦程式設計語言。它是一種通用程式設計語言，支援多重程式設計模式，例如程序化程式設計、資料抽象化、物件導向程式設計、泛型程式設計和設計模式等。</p><a href="#">講義</a></div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-list-alt icon"></i>
-                        <h3 class="name">內容</h3>
-                        <p class="description">由成功高中電子計算機研習社高二幹部擔任講師，內容涵括APCS題目實做、python,C/C++語法，並邀請資訊界名人演講</p><a class="learn-more" href="#">Learn more »</a></div>
+                <div class="col-sm-6 item">
+                    <div class="row" style="background-color: #ffffff;">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/course/python.png?h=641cea4695e44440818c3d4e31d16161"></a></div>
+                        <div class="col">
+                            <h3 class="name">python</h3>
+                            <p class="description">Python是一種廣泛使用的直譯式、進階編程、通用型程式語言，Python的設計哲學強調程式碼的可讀性和簡潔的語法。</p><a href="#">講義</a></div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-leaf icon"></i>
-                        <h3 class="name">中午社課</h3>
-                        <p class="description">中午社課專門開給對資訊領域友熱誠的社員，主要會以APCS考試為主要課程內容，著重再資料結構、演算法優化上。</p><a class="learn-more" href="#">Learn more »</a></div>
+                <div class="col-sm-6 item">
+                    <div class="row" style="background-color: #ffffff;">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/course/js.jpg?h=2d443de6a140e70720c2fd863cc137d8" style="background-color: #ffffff;"></a></div>
+                        <div class="col">
+                            <h3 class="name">JavaScript</h3>
+                            <p class="description">JavaScript是一種進階的、直譯的程式語言。JavaScript支援物件導向編程，指令式程式設計，以及函式語言程式設計。</p><a href="#">講義</a></div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-plane icon"></i>
-                        <h3 class="name">放學社課</h3>
-                        <p class="description">放學社客由成功電研、中山資研、建中資訊、景美電資四校聯合辦理，星期一到五有不同專長的學長姐授課。</p><a class="learn-more" href="#">Learn more »</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-clean" style="background-color: rgba(255,255,255,0);">
+        <div class="container">
+            <div class="intro"></div>
+            <h1 class="text-center" id="class" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">社課</h1>
+            <div class="row projects">
+                <div class="col-sm-6 col-lg-4 item" style="background-color: #ffffff;"><img class="img-fluid" src="assets/img/course/class-1.JPG?h=7290207ff2f76a500bf57364bdad32e5">
+                    <h3 class="name">一般社<strong>課</strong></h3>
+                    <p class="description">時間：每週五下午社團聯課活動時間<br>地點：成功高中求是樓電腦教室<br>講師團隊：成功電研高二教學群<br>內容：APCS題目、C/C++、python<br>備註：這個大家都要到喔！不然會被計曠課</p>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-phone icon"></i>
-                        <h3 class="name">友社互動</h3>
-                        <p class="description">我們每學期都會和友社舉辦各式各樣的活動，有一起出去玩的活動也有知識性了聯課。</p><a class="learn-more" href="#">Learn more »</a></div>
+                <div class="col-sm-6 col-lg-4 item" style="background-color: #ffffff;"><img class="img-fluid" src="assets/img/course/class-2.JPG?h=767d8094d1553c499680708823f5c810">
+                    <h3 class="name">中午社<strong>課</strong></h3>
+                    <p class="description">時間：每週一到五中午<br>地點：成功高中求是樓電腦教室<br>講師團隊：成功電研高二教學群<br>內容：APCS進階<br>備註：中午社不是必須，但想增強自己的資訊能力的就來吧！</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item" style="background-color: #ffffff;"><img class="img-fluid" src="assets/img/course/class-3.jpg?h=1b85d346e8ffd9963962751c60fdac74">
+                    <h3 class="name">放學社<strong>課</strong></h3>
+                    <p class="description">時間：每週一到五下午<br>地點：建國中學電腦教室<br>講師團隊：建成楓景四校教學群<br>備註：這也不是要求參加，但會遇到貧長不會遇到的女同學喔！&lt;3</p>
                 </div>
             </div>
         </div>
@@ -91,25 +115,7 @@
         <footer>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>&lt;&lt;課程&gt;&gt;</h3>
-                        <h3>Course</h3>
-                        <ul>
-                            <li><a href="#">APCS</a></li>
-                            <li><a href="#">C/C++</a></li>
-                            <li><a href="#">Python</a></li>
-                            <li><a href="#">放學社課</a></li>
-                            <li><a href="#">中午社課</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>&lt;&lt;關於&gt;&gt;</h3>
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">創社歷史</a></li>
-                            <li><a href="#">歷屆戰績</a></li>
-                        </ul>
-                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-6 item"><img src="assets/img/club.png?h=0c93648f6fdf76e0c89ed621ac7d16a7" alt="ckcsc" style="width: 60%;filter: brightness(0%);"></div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>&lt;&lt;友社&gt;&gt;</h3>
                         <h3>Friendly Clubs&nbsp;</h3>
@@ -122,6 +128,7 @@
                     </div>
                     <div class="col-lg-3 text-center item social"><a href="https://www.facebook.com/club.ckcsc.info/"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/ckcsc32nd_diary/?hl=zh-tw"><i class="icon ion-social-instagram"></i></a>
                         <p class="copyright">CKCSC © 2019</p>
+                        <p style="color: #000000;">designed by&nbsp;<a href="https://github.com/simba-fs" target="_blank">simba-fs</a></p>
                     </div>
                 </div>
             </div>
@@ -130,7 +137,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/script.min.js?h=8ba8b35075a6d9664b50d62c6dccff06"></script>
 </body>
 
 </html>
