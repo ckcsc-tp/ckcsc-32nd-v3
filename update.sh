@@ -2,4 +2,4 @@
 
 git add . -A
 git commit -m "update Website"
-git push
+git push origin master
