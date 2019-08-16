@@ -23,6 +23,4 @@
 		ctx.font = '50px Auraka點陣宋';
 		ctx.fillText(data.nickName,420,150)
 	}
-	
-	nameCard();
 })($);

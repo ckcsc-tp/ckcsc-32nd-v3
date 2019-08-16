@@ -1,3 +1,6 @@
+var intro = [];
+
+
 $(document).ready(function(){
 	$('#nameCard').nameCard();
 	$('#avatar').avatar().hide();
@@ -8,9 +11,19 @@ $(document).ready(function(){
 	ctx.drawImage($('#avatar')[0], 100.5, 200.5, 256,256);
 	
 	$('#nameCard').click(next)
+
+	data.forEach((item, index) => {
+		$.ajax(`./intro/${item.intro}`).
+			then((data) => {
+				intro[index] = data;
+			}).
+			catch(() => {
+				then[index] = 'fail to load introduction';
+			});
+	});
 });
 
-var index = 0;
+var index = 1;
 var all = 16;
 
 function next(){
