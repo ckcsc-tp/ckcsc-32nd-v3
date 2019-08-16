@@ -1,3 +1,5 @@
+
+console.log('member loaded');
 var data = [
 	{
 		"name": "吳政儒",

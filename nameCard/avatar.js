@@ -1,4 +1,6 @@
 (function($){
+	debugger;
+	console.log('avatar loaded');
 	function black(x, y, ctx){
 		var size = 16;
 		var rawX = x * size;
@@ -39,4 +41,6 @@
 		
 		return this;
 	}
+	debugger;
 })($);
+
