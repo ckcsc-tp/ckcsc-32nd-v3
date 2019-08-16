@@ -32,7 +32,7 @@
 		ctx.fillStyle = tmp;
 	}
 
-	$.fn.generate = function(color = '#ffffff', bgColor = '#000000'){
+	$.fn.avatar = function(color = '#ffffff', bgColor = '#000000'){
 		// console.table({color: color, bgColor: bgColor});
 		var ctx = this[0].getContext('2d');
 		generate(ctx, color, bgColor);
