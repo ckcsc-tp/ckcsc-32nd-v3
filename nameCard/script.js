@@ -1,5 +1,8 @@
 console.log('script loaded');
 var intro = [];
+var index = 0;
+var all = 16;
+var step = 2;
 
 data.forEach((item, index) => {
 	$.ajax(`./intro/${item.intro}`).
@@ -15,12 +18,21 @@ $(document).ready(function(){
 	nameCard(1);
 	$('#avatar').hide();
 
+	$('#p0').text(data[0].name).click(()=>{button(0)});
+	$('#p1').text(data[1].name).click(()=>{button(1)});
+	$('#p2').text(data[2].name).click(()=>{button(2)});
+	$('#p3').text(data[3].name).click(()=>{button(3)});
+	$('#left').click(()=>{left(all - step)});
+	$('#right').click(()=>{left(step)});
+
 });
 
 function nameCard(index){
 	
-	while(intro.length != 16);
-
+	if(intro.length <= 3){
+		setTimeout(nameCard, 100, index);
+		return;
+	}
 
 	index -= 1;
 	var person = data[index];
@@ -42,25 +54,30 @@ function nameCard(index){
 	});
 	
 	$('#avatar').avatar();
-	ctx.drawImage($('#avatar')[0], 100.5, 200.5, 256,256);
+	ctx.drawImage($('#avatar')[0], 50.5, 200.5, 256,256);
 
 	console.log(person);
 	
-	if(person.intro === 'not found'){
-		var spot = [230, 280, 330, 380, 430, 480];
-		for(var i in spot){
-			var text = '';
-			for(var j = 0; j < 18; j++){
-				text += (Math.floor(Math.random() * 10));
-			}
-			ctx.fillText(text, 400, spot[i]);
-		}
-	}else{
-		var spot = [230, 280, 330, 380, 430, 480];
-		var text = intro[index].split('\n');
-		console.log(text);
-		for(var i in text){
-			ctx.fillText(text[i], 400, spot[i]);
-		}		
+	var spot = [230, 280, 330, 380, 430, 480];
+	var text = intro[index].split('\n');
+	console.log(text);
+	for(var i in text){
+		ctx.fillText(text[i], 330, spot[i]);
+	}		
+}
+
+function left(n){
+	index = (index + n) % all;
+	console.log('===== left =====');
+	for(var i = 0; i < 4; i++){
+		console.log(j)
+		var j = (index + i) % all;
+		$(`#p${i}`).text(data[j].name);
 	}
+	console.log('================');
+}
+
+function button(n){
+	var i = (index + n) % all;
+	nameCard(i + 1);
 }

@@ -23,5 +23,7 @@
 		ctx.fillText(data.job,420,80);
 		ctx.font = '50px Auraka點陣宋';
 		ctx.fillText(data.nickName,420,150)
+		
+		ctx.font = '30px Auraka點陣宋';
 	}
 })($);

@@ -27,7 +27,7 @@ var data = [
 		"position": ["教學"],
 		"avatar": "img/members/04.jpg",
 		"intro": "4.txt",
-		"nickName": "點燈 電神"
+		"nickName": "點燈 電神 廢廢 品庠"
 	},
 	{
 		"name": "王敬為",
@@ -69,7 +69,7 @@ var data = [
 		"position": ["教學"],
 		"avatar": "img/members/10.jpg",
 		"intro": "10.txt",
-		"nickName": "思齊"
+		"nickName": "思齊(or **zz齊)"
 	},
 	{
 		"name": "郭宸傑",
@@ -104,7 +104,7 @@ var data = [
 		"position": ["美宣","教學"],
 		"avatar": "img/members/15.jpg",
 		"intro": "15.txt",
-		"nickName": "悠悠"
+		"nickName": "燻雞"
 	},
 	{
 		"name": "蘇昱安",
