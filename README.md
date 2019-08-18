@@ -2,7 +2,7 @@
 ## new ckcsc home page ##
 
 made with [bootstrap studio](https://bootstrapstudio.io/)  
-go to [new-ckcsc](https://ckcsc-32nd.github.io/new-ckcsc)
+go to [github page](https://ckcsc-32nd.github.io)
 
 # 注意事項 #
 修改前端請用bootstrap studio(可以申請github學生專案，內含bss) #
