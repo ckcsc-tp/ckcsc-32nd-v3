@@ -1,6 +1,6 @@
 # newckcsc #
 ## new ckcsc home page ##
-
+test ssh key
 made with [bootstrap studio](https://bootstrapstudio.io/)  
 go to [new-ckcsc](https://ckcsc-32nd.github.io/new-ckcsc)
 
