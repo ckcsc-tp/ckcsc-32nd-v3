@@ -69,7 +69,7 @@ var data = [
 		"position": ["教學"],
 		"avatar": "img/members/10.jpg",
 		"intro": "10.txt",
-		"nickName": "思齊(or **zz齊)"
+		"nickName": "思齊"
 	},
 	{
 		"name": "郭宸傑",
