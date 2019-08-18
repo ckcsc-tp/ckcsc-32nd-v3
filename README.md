@@ -14,3 +14,6 @@ go to [github page](https://ckcsc-32nd.github.io)
 ├─ intro/		這裡放大家的自介內容
 └─ nameCard/		這裡放生成名片的程式碼
  ```
+# TODO #
+1. 活動
+2. 公告
