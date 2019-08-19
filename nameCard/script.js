@@ -36,11 +36,11 @@ function nameCard(index){
 
 	index -= 1;
 	var person = data[index];
-	var card = $('#nameCard');
+	var card = $('#nameCard-lg');
 	var ctx = card[0].getContext('2d');
 
 	console.log(index);
-	$('#nameCard').nameCard({
+	card.nameCard({
 	//console.table({
 		name: person.name,
 		nickName: person.nickName,
@@ -64,6 +64,18 @@ function nameCard(index){
 	for(var i in text){
 		ctx.fillText(text[i], 330, spot[i]);
 	}		
+
+	var canvasSize = [
+		[450,270],
+		[600,360],
+		[1200,720]
+	];
+
+	$('canvas').not('#avatar').not('#nameCard-lg').each((index, item)=>{
+		var ctx = item.getContext('2d');
+		ctx.drawImage(card[0], 0, 0, canvasSize[index][0], canvasSize[index][1]);
+	})
+
 }
 
 function left(n){
@@ -81,3 +93,19 @@ function button(n){
 	var i = (index + n) % all;
 	nameCard(i + 1);
 }
+
+$(window).resize(()=>{
+	var nameCard = $('canvas').not('#avatar');
+	var w = $(this).width();
+	console.log(w);
+	nameCard.hide();
+	if(w >= 1400){
+		nameCard.eq(3).show();
+	}else if(w >=992){
+		nameCard.eq(2).show();
+	}else if(w >=768){
+		nameCard.eq(1).show();
+	}else{
+		nameCard.eq(0).show();
+	}
+}).resize();
