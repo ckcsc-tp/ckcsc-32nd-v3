@@ -17,3 +17,5 @@ go to [github page](https://ckcsc-32nd.github.io)
 # TODO #
 1. 活動
 2. 公告
+3. OJ即時排行榜
+4. 後端！！
