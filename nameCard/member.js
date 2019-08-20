@@ -3,7 +3,7 @@ console.log('member loaded');
 var data = [
 	{
 		"name": "吳政儒",
-		"position": ["社長", "社寵"],
+		"position": ["社長", "社寵", "成黑頭粉"],
 		"avatar": "img/members/01.gif",
 		"intro": "1.txt",
 		"nickName": "狸貓"
