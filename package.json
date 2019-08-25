@@ -1,0 +1,27 @@
+{
+  "name": "ckcsc-32nd.github.io",
+  "version": "1.0.0",
+  "description": "website of CKCSC",
+  "main": "app.js",
+  "scripts": {
+	"start": "node ./bin/www",
+    "test": "DEBUG=ckcsc-backend:* npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckcsc-32nd/ckcsc-32nd.github.io.git"
+  },
+  "author": "simba.fs@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ckcsc-32nd/ckcsc-32nd.github.io/issues"
+  },
+  "homepage": "https://github.com/ckcsc-32nd/ckcsc-32nd.github.io#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "morgan": "^1.9.1"
+  }
+}
