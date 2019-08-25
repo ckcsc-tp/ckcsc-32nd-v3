@@ -7,8 +7,12 @@ go to [github page](https://ckcsc-32nd.github.io)
 # 注意事項 #
 修改前端請用bootstrap studio(可以申請github學生專案，內含bss) #
 
-# 啟動 #
-`npm start`
+# localhost 啟動 #
+`npm start`  
+[localhost](http://localhost:3000)  
+
+# 部署 #
+`git push heroku master`
 
 # 資料夾 #
 ```
