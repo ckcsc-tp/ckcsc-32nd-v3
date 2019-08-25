@@ -9,6 +9,7 @@ go to [github page](https://ckcsc-32nd.github.io)
 
 # 資料夾 #
 ```
+public/			所有頁面、圖片等動態資料都在這
 ├─ assets/		這是bss自動生成的資料夾，js css img 都在這裡，不要動
 ├─ handout/		這是bss自動生成的資料夾，放講義頁面，不要動
 ├─ intro/		這裡放大家的自介內容
