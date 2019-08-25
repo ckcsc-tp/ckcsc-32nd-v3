@@ -26,4 +26,4 @@ public/			所有頁面、圖片等動態資料都在這
 1. 活動
 2. 公告
 3. OJ即時排行榜
-4. 後端！！
+4. 後端！！ --> 完成，現在放在 [heroku](https://ckcsc.herokuapp.com) 上
