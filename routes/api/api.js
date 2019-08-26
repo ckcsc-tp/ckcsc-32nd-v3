@@ -16,8 +16,16 @@ router.get('/user/:id', (req, res, next) => {
 });
 
 router.get('/anno', (req, res, next) => {
+	var anno = require('./anno.js');
 	var query = req.query;
-	res.send(query);
+	var preset = require('./config.js').anno;
+	for(var i in preset){
+		if(!(i in query)){
+			query[i] = preset[i];
+		}
+	}
+	var re = anno.filter((item, index) => index < query.max);
+	res.send(re);
 });
 
 module.exports = router;
