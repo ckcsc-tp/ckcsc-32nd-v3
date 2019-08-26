@@ -28,4 +28,9 @@ router.get('/anno', (req, res, next) => {
 	res.send(re);
 });
 
+router.post('/post', (req, res, next) => {
+	console.log(req.body);
+	res.send(req.body);
+});
+
 module.exports = router;
