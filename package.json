@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ckcsc-32nd/ckcsc-32nd.github.io#readme",
   "dependencies": {
+    "accounty": "^2.0.0",
     "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "express": "^4.17.1",
