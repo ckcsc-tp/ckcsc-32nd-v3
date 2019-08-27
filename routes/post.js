@@ -17,4 +17,9 @@ router.post('/intro', (req, res) => {
 
 });
 
+router.post('/echo', (req, res) => {
+	res.send(req.body);
+	console.log(req.body);
+});
+
 module.exports = router;
