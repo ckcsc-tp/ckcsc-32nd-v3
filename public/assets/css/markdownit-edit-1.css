@@ -1,0 +1,32 @@
+.emoji {
+  height: 1.2em;
+}
+
+.markdownit #mark_preview img {
+  max-width: 35%;
+}
+
+.markdownit .hljs {
+  padding: 9.5px;
+}
+
+.markdownit .hljs code {
+  white-space: pre;
+}
+
+.markdownit .footnotes {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+.markdownit .footnotes-list {
+  padding-left: 2em;
+}
+
+.warning {
+  background-color: #ff8;
+  padding: 20px;
+  border-radius: 6px;
+}
+

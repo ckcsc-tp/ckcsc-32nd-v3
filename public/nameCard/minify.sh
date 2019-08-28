@@ -1,5 +1,7 @@
-echo "" > nameCard.min.js
+file="jquery.nameCard.js"
+
+echo '' > $file 
 for i in nameCard.js avatar.js script.js;do
-	echo "///// $i /////" >> nameCard.min.js
-	cat $i >> nameCard.min.js 
+	echo "///// $i /////" >> $file 
+	cat $i >> $file 
 done

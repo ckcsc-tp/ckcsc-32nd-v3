@@ -8,6 +8,7 @@
 	
 	
 	$(document).ready(function(){
+		debugger;
 		$.getJSON('/api/user')
 			.done((e) => {
 				data = e;
@@ -20,16 +21,16 @@
 							intro[index] = 'not found';
 						});
 				});
-				if($('#nameCard-lg')[0])nameCard(1);
-				$('#p0').text(data[0].name).click(()=>{button(0)});
-				$('#p1').text(data[1].name).click(()=>{button(1)});
-				$('#p2').text(data[2].name).click(()=>{button(2)});
-				$('#p3').text(data[3].name).click(()=>{button(3)});
+				nameCard(1);
 			})
 		
 	
 		$('#avatar').hide();
 	
+		$('#p0').text(data[0].name).click(()=>{button(0)});
+		$('#p1').text(data[1].name).click(()=>{button(1)});
+		$('#p2').text(data[2].name).click(()=>{button(2)});
+		$('#p3').text(data[3].name).click(()=>{button(3)});
 		$('#left').click(()=>{left(all - step)});
 		$('#right').click(()=>{left(step)});
 	

@@ -1,0 +1,156 @@
+.markdown-panel {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+}
+
+.markdown-panel .mark-panel {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  -web-overflow-scrolling: touch;
+  border: 1px #eee solid;
+  resize: vertical;
+}
+
+.markdown-panel .edit-inner, .markdown-panel .preview-inner {
+  padding: 4vw;
+  width: 50%;
+  min-height: 100vh;
+  word-break: break-word;
+}
+
+@media (min-width: 768px) {
+  .markdown-panel .edit-inner {
+    border-right: 1px #c1c1c1 solid;
+    overflow-y: scroll;
+    -web-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 767px) {
+  .markdown-panel .col.preview-inner {
+    display: none;
+  }
+}
+
+.markdown-panel .edit-inner textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  user-select: text;
+  border: none;
+  resize: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.markdown-panel .edit-inner .mark-title {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  color: inherit;
+  width: 100%;
+  user-select: text;
+  vertical-align: middle;
+  height: 3rem;
+}
+
+.markdown-panel .mark-edit, .markdown-panel .mark-preview {
+  width: 100%;
+  min-height: 500px;
+}
+
+.markdown-panel .mark-header {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 3px 10px;
+  border: 1px #eee solid;
+  border-radius: 5px 5px 0 0;
+  background: #fcfcfc;
+  overflow: hidden;
+  z-index: 100;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 575px) {
+  .markdown-panel .mark-header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .markdown-panel .mark-panel {
+    margin-top: 38px;
+  }
+}
+
+.markdown-panel .mark-header .mark-bar {
+  float: left;
+}
+
+.markdown-panel .mark-header .mark-bar .sparator {
+  color: #e3e3e3;
+  margin: 0 3px;
+}
+
+.markdown-panel .mark-header .mark-bar a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.markdown-panel .mark-header .mark-bar a:hover {
+  text-decoration: none;
+  background-color: rgb(252, 252, 252);
+  border-color: #95a5a6;
+  transition: background .1s,color .1s;
+}
+
+@media (max-width: 767px) {
+  .markdown-panel #btn_columns {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .markdown-panel #btn_prv_hide {
+    display: none;
+  }
+}
+
+.markdown-panel .mark-header .mark-amount {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .markdown-panel .mark-header .mark-amount {
+    display: block;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+}
+
+.markdown-panel .mark-header .mark-amount .mark-edit-amount {
+  margin: 0 5px;
+}
+
