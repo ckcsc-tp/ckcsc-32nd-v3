@@ -93,3 +93,8 @@ body * {
   font-family: Aldrich, Auraka;
 }
 
+#no-js {
+  position: fixed;
+  z-index: 99999;
+}
+
