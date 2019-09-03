@@ -85,7 +85,7 @@
 	
 	
 	$(document).ready(function(){
-		$.getJSON('/api/user')
+		$.getJSON('/api/GET/user')
 			.done((e) => {
 				data = e;
 				data.forEach((item, index) => {
