@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
+router.get('/', (req, res) => {
+	res.render('index', {title: 'GET'});
+});
+
 ///// get user /////
 
 function user(req, res){
