@@ -18,6 +18,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', require('./routes/api.js'));
 
+app.post('/echo', (req, res, next) => {
+	console.log(req.body);
+	res.send(req.body);
+});
+
+app.get('/echo', (req, res) => {
+	res.send(req.query);
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
 	// next(createError(404));

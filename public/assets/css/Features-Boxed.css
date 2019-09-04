@@ -98,3 +98,7 @@ body * {
   z-index: 99999;
 }
 
+#loading {
+  position: fixed;
+}
+
