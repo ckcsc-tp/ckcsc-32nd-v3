@@ -1,7 +1,10 @@
 
 ///// nameCard.js /////
 (function($){
-	console.log('nameCard loaded');		
+	// var log = console.log;
+	var log = () => {};
+	
+	log('nameCard loaded');		
 	$.fn.nameCard = function(data){
 		var ctx = this[0].getContext('2d');
 		if(!data) data = {};
@@ -31,7 +34,10 @@
 })(jQuery);
 ///// avatar.js /////
 (function($){
-	console.log('avatar loaded');
+	// var log = console.log;
+	var log = () => {};
+	
+	log('avatar loaded');
 	function black(x, y, ctx){
 		var size = 16;
 		var rawX = x * size;
@@ -75,8 +81,11 @@
 })(jQuery);
 
 ///// script.js /////
-(function($){
-	console.log('script loaded');
+var nameCard = function($){
+	// var log = console.log;
+	var log = () => {};
+	
+	log('script loaded');
 	var intro = [];
 	var index = 0;
 	var all = 16;
@@ -124,7 +133,7 @@
 		var card = $('#nameCard-lg');
 		var ctx = card[0].getContext('2d');
 	
-		console.log(index);
+		log(index);
 		card.nameCard({
 		//console.table({
 			name: person.name,
@@ -141,11 +150,11 @@
 		$('#avatar').avatar();
 		ctx.drawImage($('#avatar')[0], 50.5, 200.5, 256,256);
 	
-		console.log(person);
+		log(person);
 		
 		var spot = [230, 280, 330, 380, 430, 480];
 		var text = intro[index].split('\n');
-		console.log(text);
+		log(text);
 		for(var i in text){
 			ctx.fillText(text[i], 330, spot[i]);
 		}		
@@ -165,13 +174,13 @@
 	
 	function left(n){
 		index = (index + n) % all;
-		console.log('===== left =====');
+		log('===== left =====');
 		for(var i = 0; i < 4; i++){
-			console.log(j)
+			log(j)
 			var j = (index + i) % all;
 			$(`#p${i}`).text(data[j].name);
 		}
-		console.log('================');
+		log('================');
 	}
 	
 	function button(n){
@@ -182,7 +191,7 @@
 	$(window).resize(()=>{
 		var nameCard = $('canvas').not('#avatar');
 		var w = $(this).width();
-		console.log(w);
+		log(w);
 		nameCard.hide();
 		if(w >= 1400){
 			nameCard.eq(3).show();
@@ -194,4 +203,4 @@
 			nameCard.eq(0).show();
 		}
 	}).resize();
-})(jQuery);
+};

@@ -18,6 +18,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', require('./routes/api.js'));
 
+// echo testing tool
+
 app.post('/echo', (req, res, next) => {
 	console.log(req.body);
 	res.send(req.body);

@@ -1,5 +1,8 @@
 (function($){
-	console.log('nameCard loaded');		
+	// var log = console.log;
+	var log = () => {};
+	
+	log('nameCard loaded');		
 	$.fn.nameCard = function(data){
 		var ctx = this[0].getContext('2d');
 		if(!data) data = {};

@@ -1,5 +1,8 @@
 (function($){
-	console.log('avatar loaded');
+	// var log = console.log;
+	var log = () => {};
+	
+	log('avatar loaded');
 	function black(x, y, ctx){
 		var size = 16;
 		var rawX = x * size;

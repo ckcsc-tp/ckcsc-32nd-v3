@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ckcsc</title>
+    <meta name="twitter:description" content="成功電研是一個由高中生組成的學術性社團，致力於推廣程式教育、資安觀念等等。我們有遍布全台的友社，定期舉辦各種研習活動。增進友社情誼。">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../assets/img/club-black.png?h=ce513a715b29df5871a87b257ce87081">
+    <meta name="description" content="成功電研是一個由高中生組成的學術性社團，致力於推廣程式教育、資安觀念等等。我們有遍布全台的友社，定期舉辦各種研習活動。增進友社情誼。">
+    <meta name="twitter:title" content="CKCSC">
+    <meta name="theme-color" content="rgb(134,237,206)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png?h=0621647d73705178e6cb8316eee39b6d">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png?h=37049fd6ecf7ab541e1e70c1c28312e2">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/favicon-180.png?h=8a3657c4f2e5a188963a6435fbb1acd2">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png?h=9409bfdff51ea85a744c36d28c29e398">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon-512.png?h=1a4832bb9d9711d090a451beec42fb63">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json?h=0125f1ba2981d5e2e398f122a998585e">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css?h=0457286315897088de090088431b7e82">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css?h=8f120d33c0bf092c48e3c98c6b1cd5d3">
+    <link rel="stylesheet" href="assets/css/heading.css?h=d41d8cd98f00b204e9800998ecf8427e">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Loading-Div.css?h=add328231628c412362abcd8b88deb97">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css?h=61982358fb4d87847c90bf8d116766e5">
+    <link rel="stylesheet" href="assets/css/markdownit-edit-1.css?h=70d254b4299cafc812cf0744723e5a6c">
+    <link rel="stylesheet" href="assets/css/markdownit-edit.css?h=9b7a2533142477d8bbc2a0dc2b2c7687">
+    <link rel="stylesheet" href="assets/css/menu-collapse-ultimate.css?h=b102dc932f31031e46c7fe3026786526">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css?h=a788dfb0658dfe6130c264c3c32d77f0">
+    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css?h=fb28b8d95a28dba5c6fec23412473f65">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css?h=da830b6503e0457b5735b0129f20b163">
+    <link rel="stylesheet" href="assets/css/styles.css?h=d41d8cd98f00b204e9800998ecf8427e">
+</head>
+
+<body style="background-color: rgb(92,146,169);">
+    <div class="container d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center" id="login-form" style="height: 100vh;">
+        <form class="text-center bg-light border rounded border-primary shadow" id="login" style="background-color: #78bdc6;padding: 20px 80px;" enctype="text/plain">
+            <h1 class="text-monospace text-capitalize text-center">登入</h1><input class="bg-light border rounded border-primary shadow-sm form-control" type="text" id="username" name="username" placeholder="username" autofocus="" required="" style="margin-bottom: 5px;"><input class="bg-light border rounded border-primary shadow-sm form-control"
+                type="password" id="password" name="password" placeholder="password" required="" style="margin-bottom: 10px;"><button class="btn btn-primary border rounded" id="submit" type="submit">繼續</button></form><script src="../lib/hashes.js"></script>
+<script>
+	window.onload = () => {
+		(function($){
+			///// hide loading /////
+			// $('#loading').hide();
+			
+			var sha = new Hashes.SHA512();
+			$('#login').submit((e) => {
+				e.preventDefault();
+				var username = $('#username').val()
+				var password = sha.hex($('#password').val());
+				$.post('/api/GET/login', {
+					username: username,
+					password: password
+				})
+					.done((e) => {
+						console.log(e);	
+					})
+			})
+		})(jQuery);
+	}
+</script></div>
+    <section
+        id="edit-announce" class="markdown-panel markdownit" style="background-color: #ffffff;">
+        <div class="mark-header">
+            <div class="mark-bar"><a id="btn_blod" href="#"><i class="fa fa-bold"></i></a><a href="#"><i class="fa fa-italic" id="btn_italic"></i></a><a id="btn_header" href="#"><i class="fa fa-header"></i></a><span class="sparator">|</span><a id="btn_quote" href="#"><i class="fa fa-quote-left"></i></a>
+                <a
+                    id="btm_list_ul" href="#"><i class="fa fa-list-ul"></i></a><a id="btn_list_ol" href="#"><i class="fa fa-list-ol"></i></a><span class="sparator">|</span><a id="btn_link" href="#"><i class="fa fa-link"></i></a><a id="btn_image" href="#"><i class="fa fa-image"></i></a>
+                    <span
+                        class="sparator">|</span><a id="btn_columns" href="#"><i class="fa fa-columns"></i></a><a id="btn_prv_code" href="#"><i class="fa fa-codepen"></i></a><a id="btn_prv_show" href="#"><i class="fa fa-arrow-left"></i></a><a id="btn_prv_hide" href="#"><i class="fa fa-arrow-right"></i></a></div>
+            <div
+                class="mark-amount"><span>amount:</span><span id="mark_edit_amount" class="mark-edit-amount">0</span></div>
+        </div>
+        <div class="row mark-panel">
+            <div class="col edit-inner"><textarea id="mark_title" class="mark-title" placeholder="Post Title"></textarea><textarea id="mark_edit" class="mark-edit"></textarea></div>
+            <div class="col preview-inner">
+                <h1 id="mark_preview_title" placeholder="Post Title"></h1>
+                <div id="mark_preview" class="mark-preview"></div>
+            </div>
+        </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+        <script src="assets/js/jquery.cookie.js?h=d5528dde0006c78be04817327c2f9b6f"></script>
+        <script src="assets/js/jquery.nameCard.js?h=61d8c9aea40a33751033cd2e3aa1ae93"></script>
+        <script src="assets/js/markdownit-edit-1.js?h=b7215a6045cb28c731e9191b0108d1a3"></script>
+        <script src="assets/js/markdownit-edit-2.js?h=0dada39d5c82460b3a846004ac6f35b0"></script>
+        <script src="assets/js/markdownit-edit-3.js?h=d4e82722af7cc5913aad1a38b18b5d9b"></script>
+        <script src="assets/js/markdownit-edit.js?h=3904bf9ed1ba739220e9ee734846480b"></script>
+        <script src="assets/js/Simple-Slider.js?h=df0233e38c69d965b7833f56606b8826"></script>
+</body>
+
+</html>

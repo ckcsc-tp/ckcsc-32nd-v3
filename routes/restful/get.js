@@ -5,6 +5,10 @@ router.get('/', (req, res) => {
 	res.render('index', {title: 'GET'});
 });
 
+///// ues /////
+
+router.use('/login', require('../login/login.js'));
+
 ///// get user /////
 
 function user(req, res){
