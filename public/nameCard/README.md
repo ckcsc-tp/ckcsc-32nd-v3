@@ -16,7 +16,7 @@ preset:
 ```
 ## script.js ##
 這個是主要程式碼，懶的說，看註解（如果有的話）  
-## nameCard.jquery.js ##
+## jquery.nameCard.js ##
 把上面幾個通通合起來
 ## minify.sh ##
 產生`nameCard.min.js`的執行檔(shell script)
