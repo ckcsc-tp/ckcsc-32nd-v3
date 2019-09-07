@@ -1,7 +1,5 @@
-# ckcsc #
-## new ckcsc home page ##
-
-[ckcsc](https://ckcsc.herokuapp.com)
+# [ckcsc](https://ckcsc.herokuapp.com) #
+## ChongKong Computer Study Club ##
 
 # 注意事項 #
 修改前端請用bootstrap studio(可以申請github學生專案，內含bss) #
@@ -26,3 +24,8 @@ public/			所有頁面、圖片等動態資料都在這
 2. 公告
 3. OJ即時排行榜
 4. 後端！！ --> 完成，現在放在 [heroku](https://ckcsc.herokuapp.com) 上
+
+# Document #
+1. [如何發公告](https://github.com/ckcsc-32nd/ckcsc/blob/master/doc/announce.md)  
+2. [如何取得發公告權限](https://github.com/ckcsc-32nd/ckcsc/blob/master/doc/access.md)  
+ 
