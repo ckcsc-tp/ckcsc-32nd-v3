@@ -1,66 +1,40 @@
+/*
+	{
+		title: 'untitle',
+		content: 'nothing',
+		author: 'Simba'
+	},
+*/
+
 module.exports = [
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai',
-	'asgvawv',
-	'rehy5q3',
-	'wh54wag',
-	'rawhvekai'
+	{
+		title: 'untitle',
+		content: 'nothing',
+		author: 'Simba'
+	},
+	{
+		title: 'untitle',
+		content: 'nothing',
+		author: 'Simba'
+	},
+	{
+		title: 'untitle',
+		content: 'nothing',
+		author: 'Simba'
+	},
+	{
+		title: 'untitle',
+		content: 'nothing',
+		author: 'Simba'
+	},
+	{
+		title: 'untitle',
+		content: 'nothing',
+		author: 'Simba'
+	},
+	{
+		title: 'untitle',
+		content: 'nothing',
+		author: 'Simba'
+	},
 ]

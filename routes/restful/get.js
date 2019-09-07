@@ -31,20 +31,6 @@ router.get('/user/:id', user);
 
 ///// get announces /////
 
-function anno(req, res){
-	var query = req.query;
-	for(var i in anno.preset){
-		if(!(i in query)){
-			query[i] = anno.preset[i];
-		}
-	}
-	var re = anno.data.filter((item, index) => index < query.max);
-	res.send(re);
-};
-
-anno.preset = require('./api/config.js').anno;
-anno.data = require('./api/anno-data.js');
-
-router.get('/anno', anno);
+router.use('/anno', require('./api/announce.js'));
 
 module.exports = router;
