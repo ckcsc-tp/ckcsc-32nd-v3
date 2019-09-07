@@ -7,34 +7,10 @@
 */
 
 module.exports = [
+	
 	{
-		title: 'untitle',
-		content: 'nothing',
-		author: 'Simba'
-	},
-	{
-		title: 'untitle',
-		content: 'nothing',
-		author: 'Simba'
-	},
-	{
-		title: 'untitle',
-		content: 'nothing',
-		author: 'Simba'
-	},
-	{
-		title: 'untitle',
-		content: 'nothing',
-		author: 'Simba'
-	},
-	{
-		title: 'untitle',
-		content: 'nothing',
-		author: 'Simba'
-	},
-	{
-		title: 'untitle',
-		content: 'nothing',
+		title: '測試',
+		content: '這是一個測試的公告，請勿理會',
 		author: 'Simba'
 	},
 ]
