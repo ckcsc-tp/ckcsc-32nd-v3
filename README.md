@@ -20,9 +20,9 @@ public/			所有頁面、圖片等動態資料都在這
 └─ nameCard/		這裡放生成名片的程式碼
  ```
 # TODO #
-1. 活動
-2. 公告
-3. OJ即時排行榜
+1. 活動 --> 完成
+2. 公告 --> 完成
+3. OJ即時排行榜 --> 有點難，我好懶
 4. 後端！！ --> 完成，現在放在 [heroku](https://ckcsc.herokuapp.com) 上
 
 # Document #
