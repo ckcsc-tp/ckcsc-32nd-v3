@@ -13,4 +13,9 @@ module.exports = [
 		content: '這是一個測試的公告，請勿理會',
 		author: 'Simba'
 	},
+	{
+		title: '測試2',
+		content: '這是另一個測試的公告，請勿理會',
+		author: 'Simba'
+	},
 ]
