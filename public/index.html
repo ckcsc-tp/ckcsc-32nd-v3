@@ -23,8 +23,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
-    <link rel="stylesheet" href="assets/css/Features-Boxed.css?h=11c6b7a06405e2395effb020646661a7">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css?h=0a966f0ed110a24ec5d7c2be660af49b">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css?h=8f120d33c0bf092c48e3c98c6b1cd5d3">
+    <link rel="stylesheet" href="assets/css/heading-1.css?h=a6cfc45e57594b68fb63d730d7c9345c">
     <link rel="stylesheet" href="assets/css/heading.css?h=d41d8cd98f00b204e9800998ecf8427e">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Loading-Div.css?h=add328231628c412362abcd8b88deb97">
@@ -49,15 +50,6 @@
 	}
 </script>
     <div id="header"></div>
-    <div id="no-js">
-        <div class="card text-center d-md-flex justify-content-center align-items-center align-content-center align-self-center justify-content-md-center align-items-md-center" style="width: 100vw;height: 100vh;">
-            <div class="card-body">
-                <h6 class="display-4 text-danger card-subtitle mb-2">沒有 JavaScript</h6>
-                <p class="text-danger card-text">這個網頁需要執行 javascript 才能給您最好的使用體驗，現在您的瀏覽器不允許我們使用 javascript ，請在設定把 enable javascript 選項打開再重新載入此頁，造成您的不便請見諒。</p><img src="assets/img/no-js.png?h=f07848e5a552db982b13228f56a79ced"></div>
-        </div><script>
-  document.getElementById('no-js').remove();
-	console.log('javascript');
-</script></div>
     <nav class="navbar navbar-light navbar-expand-md sticky-top bg-info text-uppercase d-lg-flex">
         <div class="container-fluid" style="/*padding-left: 0px;*//*margin-left: 0px;*/"><a class="navbar-brand text-light" href="#header" style="color: #ffffff;">CKCSC</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
@@ -160,33 +152,32 @@
         </div>
     </div>
     <div class="container">
-        <div></div>
-    </div>
-    <div class="container">
-        <h1 class="text-center" id="activity" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">幹部們</h1>
-    </div>
-    <div class="container text-center" style="padding-top: 80px;">
-        <div class="overflow-auto"><canvas id="nameCard-sm" width="450" height="270"></canvas>
-<canvas id="nameCard-md" width="600" height="360"></canvas>
-<canvas id="nameCard-lg" width="900" height="540"></canvas>
-<canvas id="nameCard-xl" width="1200" height="720"></canvas>
-
-
-<br><br>
-<canvas id="avatar" width="128" height="128">
-  <img src="assets/img/init.png">
-</canvas>
-<!--
-<script src="./jquery.js"></script>
-<script src="./nameCard/nameCard.min.js"></script>
-
-<script src="./nameCard/member.js"></script>
---></div>
-        <div>
-            <div class="btn-group" role="group"><button class="btn btn-primary" id="left" type="button">&nbsp;<i class="fa fa-caret-square-o-left"></i></button><button class="btn btn-primary" id="p0" type="button">Person 4</button><button class="btn btn-primary" id="p1" type="button">Person 1</button>
-                <button
-                    class="btn btn-primary" id="p2" type="button">Person 2</button><button class="btn btn-primary" id="p3" type="button">Person 3</button><button class="btn btn-primary" id="right" type="button"><i class="fa fa-caret-square-o-right"></i></button></div>
-        </div>
+        <h1 class="text-center" id="class" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">公告</h1>
+        <div id="announce">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-capitalize card-title">title</h4>
+                    <h6 class="text-capitalize text-muted card-subtitle mb-2">author</h6>
+                    <p class="card-text">content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;content&nbsp;</p>
+                </div>
+            </div><script>
+	window.onload = () => {
+		$.get('/api/GET/anno')
+		.done((data) => {
+			var a = $('#announce');
+			var b = a.children().eq(0).clone();
+			a.children().remove();
+			for(var i in data){
+				var anno = b.clone();
+				anno.children().children()
+			    .eq(0).text(data[i].title).end()
+			    .eq(1).text(data[i].author).end()
+			    .eq(2).text(data[i].content).end()
+				.end().end().appendTo(a);
+			}
+		});
+	}
+</script></div>
     </div>
     <div class="footer-clean" style="padding-top: 100px;">
         <footer>
