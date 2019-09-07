@@ -23,4 +23,9 @@ module.exports = [
 		content: '這又是一個測試的公告，請勿理會',
 		author: 'Simba'
 	},
+	{
+		title: '公告系統測試',
+		content: '如果看到這個公告，代表公告系統完成了！！',
+		author: 'Simba'
+	},
 ]
