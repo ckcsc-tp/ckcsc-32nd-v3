@@ -5,11 +5,12 @@
 修改前端請用bootstrap studio(可以申請github學生專案，內含bss) #
 
 # localhost 啟動 #
-`npm start`  
+`npm test`  
 [localhost](http://localhost:3000)  
 
 # 部署 #
-`git push heroku master`
+我設定了自動從master分支部署
+只管上傳就好惹！！
 
 # 資料夾 #
 ```
@@ -28,4 +29,3 @@ public/			所有頁面、圖片等動態資料都在這
 # Document #
 1. [如何發公告](https://github.com/ckcsc-32nd/ckcsc/blob/master/doc/announce.md)  
 2. [如何取得發公告權限](https://github.com/ckcsc-32nd/ckcsc/blob/master/doc/access.md)  
- 
