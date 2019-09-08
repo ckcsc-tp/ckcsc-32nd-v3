@@ -107,3 +107,8 @@ body * {
   z-index: 9999999999;
 }
 
+.heading {
+  position: absolute;
+  left: 45vw;
+}
+
