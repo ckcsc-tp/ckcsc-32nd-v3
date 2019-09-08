@@ -40,6 +40,20 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top bg-info text-uppercase d-lg-flex">
+        <div class="container-fluid" style="/*padding-left: 0px;*//*margin-left: 0px;*/"><a class="navbar-brand text-light" href="#header" style="color: #ffffff;">CKCSC</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" style="font-size: 20px;">
+                    <li class="nav-item" role="presentation"><a class="nav-link active text-light" href="#about" style="color: #ffffff;">關於</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="#course" style="color: #ffffff;">課程</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="#class" style="color: #ffffff;">社課</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="activity.html" style="color: #ffffff;">活動</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-light" style="color: #ffffff;" href="http://cgoj.cksh.tp.edu.tw/" target="_blank">線上解題系統</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
     <div id="fullpage">
         <div class="section">
             <h1 class="text-center" id="about" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">關於</h1>
@@ -52,41 +66,76 @@
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/APCS-logo.png?h=1b3859d4b87de2dc516001b96cfa7973"></div>
-                <div class="col">
-                    <h3>APCS</h3>
-                    <p>APCS大學程式設計先修檢測，藉由舉辦具公信力之「程式設計檢測」，讓具備程式設計能力之高中職學生，能夠檢驗學習成果，並供作大學選才的參考依據。</p>
+        <div class="section" style="background-color: #8fee9e;">
+            <div class="slide" data-anchor="slide1">
+                <div class="row">
+                    <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/APCS-logo.png?h=1b3859d4b87de2dc516001b96cfa7973"></div>
+                    <div class="col d-md-flex align-items-md-center">
+                        <div>
+                            <h3>APCS</h3>
+                            <p>APCS大學程式設計先修檢測，藉由舉辦具公信力之「程式設計檢測」，讓具備程式設計能力之高中職學生，能夠檢驗學習成果，並供作大學選才的參考依據。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide2">
+                <div class="row">
+                    <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/c++.png?h=bf9a6486e966ae664cb204f7a8cfbff4"></div>
+                    <div class="col d-md-flex align-items-md-center">
+                        <div>
+                            <h3>C++</h3>
+                            <p>C++是一種使用廣泛的電腦程式設計語言。它是一種通用程式設計語言，支援多重程式設計模式，例如程序化程式設計、資料抽象化、物件導向程式設計、泛型程式設計和設計模式等。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide3">
+                <div class="row">
+                    <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/python.png?h=641cea4695e44440818c3d4e31d16161"></div>
+                    <div class="col d-md-flex align-items-md-center">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Python是一種廣泛使用的直譯式、進階編程、通用型程式語言，Python的設計哲學強調程式碼的可讀性和簡潔的語法。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide4">
+                <div class="row">
+                    <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/js.png?h=0d0d2f403610d421685699422eadfcc8"></div>
+                    <div class="col d-md-flex align-items-md-center">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>JavaScript是一種進階的、直譯的程式語言。JavaScript支援物件導向編程，指令式程式設計，原形鏈物件導向。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/c++.png?h=bf9a6486e966ae664cb204f7a8cfbff4"></div>
-                <div class="col">
-                    <h3>C++</h3>
-                    <p>C++是一種使用廣泛的電腦程式設計語言。它是一種通用程式設計語言，支援多重程式設計模式，例如程序化程式設計、資料抽象化、物件導向程式設計、泛型程式設計和設計模式等。</p>
+        <div class="section fp-auto-height" style="padding-bottom: 100px;">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 col-lg-6 text-center align-self-center item"><img src="assets/img/club.png?h=0c93648f6fdf76e0c89ed621ac7d16a7" alt="ckcsc" style="width: 60%;filter: brightness(0%);"></div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>&lt;&lt;友社&gt;&gt;</h3>
+                            <h3>Relative Clubs&nbsp;</h3>
+                            <ul>
+                                <li><a href="https://www.facebook.com/infor.32nd/" target="_blank">建中資訊</a></li>
+                                <li><a href="https://www.facebook.com/中山女高資訊研究社26th-267152867499225/" target="_blank">中山資研</a></li>
+                                <li><a href="https://www.facebook.com/cmioc26th/" target="_blank">景美電資</a></li>
+                                <li><a href="https://www.facebook.com/hsnucnmc" target="_blank">附中網管</a></li>
+                                <li><a href="#">To be continue......</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 text-center item social"><a href="https://www.facebook.com/club.ckcsc.info/" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/ckcsc32nd_diary/?hl=zh-tw" target="_blank"><i class="icon ion-social-instagram"></i></a>
+                            <p
+                                class="copyright">CKCSC © 2019</p>
+                                <p class="copyright">designed by&nbsp;<a href="https://github.com/simba-fs" target="_blank" style="color: rgb(75,76,77);">simba-fs</a></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/python.png?h=641cea4695e44440818c3d4e31d16161"></div>
-                <div class="col">
-                    <h3>Python</h3>
-                    <p>Python是一種廣泛使用的直譯式、進階編程、通用型程式語言，Python的設計哲學強調程式碼的可讀性和簡潔的語法。</p>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/js.jpg?h=2d443de6a140e70720c2fd863cc137d8"></div>
-                <div class="col">
-                    <h3>JavaScript</h3>
-                    <p>JavaScript是一種進階的、直譯的程式語言。JavaScript支援物件導向編程，指令式程式設計，原形鏈物件導向。</p>
-                </div>
-            </div>
+            </footer>
         </div>
     </div><script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
@@ -100,7 +149,7 @@ new fullpage('#fullpage', {
     parallax: true,
     onLeave: function(origin, destination, direction){
         console.log("Leaving section" + origin.index);
-    },
+    }
 });
 
 
