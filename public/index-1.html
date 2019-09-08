@@ -40,41 +40,19 @@
 </head>
 
 <body>
-    <div id="no-js">
-        <div class="card text-center d-md-flex justify-content-center align-items-center align-content-center align-self-center justify-content-md-center align-items-md-center" style="width: 100vw;height: 100vh;">
-            <div class="card-body">
-                <h6 class="display-4 text-danger card-subtitle mb-2">沒有 JavaScript</h6>
-                <p class="text-danger card-text">這個網頁需要執行 javascript 才能給您最好的使用體驗，現在您的瀏覽器不允許我們使用 javascript ，請在設定把 enable javascript 選項打開再重新載入此頁，造成您的不便請見諒。</p><img src="assets/img/no-js.png?h=f07848e5a552db982b13228f56a79ced"></div>
-        </div><script>
-  document.getElementById('no-js').remove();
-	console.log('javascript');
-</script></div>
-    <div class="container text-center" style="padding-top: 80px;">
-        <h1 class="text-center" id="activity" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">幹部們</h1>
-        <div class="overflow-auto"><canvas id="nameCard-sm" width="450" height="270"></canvas>
-<canvas id="nameCard-md" width="600" height="360"></canvas>
-<canvas id="nameCard-lg" width="900" height="540"></canvas>
-<canvas id="nameCard-xl" width="1200" height="720"></canvas>
-
-
-<br><br>
-<canvas id="avatar" width="128" height="128">
-  <img src="assets/img/init.png">
-</canvas>
-<!--
-<script src="./jquery.js"></script>
-<script src="./nameCard/nameCard.min.js"></script>
-
-<script src="./nameCard/member.js"></script>
---></div>
-        <div>
-            <div class="btn-group" role="group"><button class="btn btn-primary" id="left" type="button">&nbsp;<i class="fa fa-caret-square-o-left"></i></button><button class="btn btn-primary" id="p0" type="button">Person 4</button><button class="btn btn-primary" id="p1" type="button">Person 1</button>
-                <button
-                    class="btn btn-primary" id="p2" type="button">Person 2</button><button class="btn btn-primary" id="p3" type="button">Person 3</button><button class="btn btn-primary" id="right" type="button"><i class="fa fa-caret-square-o-right"></i></button></div>
+    <div id="fullpage">
+        <div class="section">
+            <h1 class="text-center" id="about" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">關於</h1>
+            <div class="row" style="width: 700;">
+                <div class="col-md-6" style="width: 300;">
+                    <p class="text-center" style="font-size: 20px;width: 300;color: rgb(48,51,52);">成功電研是一群熱愛程式的高中生組成的，一起學習、成長，我們也舉辦各種活動，致力於聯繫友社情誼、推廣程式教育<br><br></p>
+                </div>
+                <div class="col-md-6" style="width: 300;">
+                    <p class="text-center" style="font-size: 20px;width: 300;color: #303334;">在這裡你可以盡情的揮灑青春，和朋友一起研究專題，發展屬於自己的能力。這裡永遠有一群最好的夥伴等著你<br></p>
+                </div>
+            </div>
         </div>
-    </div>
-    <main>
-        <section class="section">
+        <div class="section">
             <div class="row">
                 <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/APCS-logo.png?h=1b3859d4b87de2dc516001b96cfa7973"></div>
                 <div class="col">
@@ -82,8 +60,8 @@
                     <p>APCS大學程式設計先修檢測，藉由舉辦具公信力之「程式設計檢測」，讓具備程式設計能力之高中職學生，能夠檢驗學習成果，並供作大學選才的參考依據。</p>
                 </div>
             </div>
-        </section>
-        <section class="section">
+        </div>
+        <div class="section">
             <div class="row">
                 <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/c++.png?h=bf9a6486e966ae664cb204f7a8cfbff4"></div>
                 <div class="col">
@@ -91,8 +69,8 @@
                     <p>C++是一種使用廣泛的電腦程式設計語言。它是一種通用程式設計語言，支援多重程式設計模式，例如程序化程式設計、資料抽象化、物件導向程式設計、泛型程式設計和設計模式等。</p>
                 </div>
             </div>
-        </section>
-        <section class="section">
+        </div>
+        <div class="section">
             <div class="row">
                 <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/python.png?h=641cea4695e44440818c3d4e31d16161"></div>
                 <div class="col">
@@ -100,8 +78,8 @@
                     <p>Python是一種廣泛使用的直譯式、進階編程、通用型程式語言，Python的設計哲學強調程式碼的可讀性和簡潔的語法。</p>
                 </div>
             </div>
-        </section>
-        <section class="section">
+        </div>
+        <div class="section">
             <div class="row">
                 <div class="col-md-4 d-md-flex justify-content-md-center align-items-md-center"><img class="rounded img-fluid" width="100%" height="100%" src="assets/img/course/js.jpg?h=2d443de6a140e70720c2fd863cc137d8"></div>
                 <div class="col">
@@ -109,8 +87,24 @@
                     <p>JavaScript是一種進階的、直譯的程式語言。JavaScript支援物件導向編程，指令式程式設計，原形鏈物件導向。</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div><script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
+
+<script>
+	
+
+new fullpage('#fullpage', {
+    navigation: true,
+    responsiveWidth: 700,
+    parallax: true,
+    onLeave: function(origin, destination, direction){
+        console.log("Leaving section" + origin.index);
+    },
+});
+
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>

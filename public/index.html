@@ -76,7 +76,7 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
-    <div class="intro" style="margin: 40px;">
+    <div class="intro section" style="margin: 40px;">
         <h1 class="text-center" id="about" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">關於</h1>
         <div class="row" style="width: 700;">
             <div class="col-md-6" style="width: 300;">
@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-    <div class="projects-horizontal" style="background-color: rgba(255,255,255,0);">
+    <div class="projects-horizontal section" style="background-color: rgba(255,255,255,0);">
         <div class="container">
             <div class="intro"></div>
             <h1 class="text-center" id="course" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">課程</h1>
@@ -131,7 +131,7 @@
             </div>
         </div>
     </div>
-    <div class="projects-clean" style="background-color: rgba(255,255,255,0);">
+    <div class="projects-clean section">
         <div class="container">
             <div class="intro"></div>
             <h1 class="text-center" id="class" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">社課</h1>
@@ -151,7 +151,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container section">
         <h1 class="text-center" id="class" href="#" style="color: #000000;margin: 10px;padding: 10px;margin-top: 30px;padding-top: 80px;font-style: normal;">公告</h1>
         <div id="announce">
             <div class="card">
@@ -203,7 +203,23 @@
                 </div>
             </div>
         </footer>
-    </div>
+    </div><script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
+
+<script>
+	
+
+new fullpage('#fullpage', {
+    navigation: true,
+    responsiveWidth: 700,
+    parallax: true,
+    onLeave: function(origin, destination, direction){
+        console.log("Leaving section" + origin.index);
+    },
+});
+
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
