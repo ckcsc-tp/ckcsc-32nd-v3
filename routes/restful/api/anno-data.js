@@ -7,7 +7,6 @@
 */
 
 module.exports = [
-	
 	{
 		title: '測試',
 		content: '這是一個測試的公告，請勿理會',
@@ -27,5 +26,10 @@ module.exports = [
 		title: '公告系統測試',
 		content: '如果看到這個公告，代表公告系統完成了！！',
 		author: 'Simba'
+	},
+	{
+		title: '注意',
+		content: '謝謝你的注意',
+		author: 'tino'
 	},
 ]
