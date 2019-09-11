@@ -1,5 +1,5 @@
 # [ckcsc](https://ckcsc.herokuapp.com) #
-## ChongKong Computer Study Club ##
+## ChengKong Computer Study Club ##
 
 # 注意事項 #
 修改前端請用bootstrap studio(可以申請github學生專案，內含bss) #
