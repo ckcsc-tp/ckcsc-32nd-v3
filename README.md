@@ -25,7 +25,7 @@ public/		所有頁面、圖片等動態資料都在這
 2. 公告 --> 剩超連結
 3. OJ即時排行榜 --> 有點難，我好懶
 4. 後端！！ --> 完成，現在放在 [heroku](https://ckcsc.herokuapp.com) 上
-5.社課講義上傳 --> 代處理
+5. 社課講義上傳 --> 代處理
 
 # Document #
 1. [如何發公告](https://github.com/ckcsc-32nd/ckcsc/blob/master/doc/announce.md)  
