@@ -74,7 +74,7 @@ var data = [
 		"position": ["網管"],
 		"avatar": "img/members/11.jpg",
 		"intro": "11.txt",
-		"nickName": "Not found"
+		"nickName": "郭~~"
 	},
 	{
 		"name": "陳宏彰",
