@@ -17,6 +17,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', require('./routes/api.js'));
+app.use('/auth', require('./routes/auth.js'));
+
 
 // echo testing tool
 
