@@ -18,15 +18,7 @@ var UserSchema = new mongoose.Schema({
 		min: 6,
 		max: 225,
 		required: true 
-	},
-	homepage: String,
-	realname: {
-		type: String,
-		min: 2,
-		required: true 
-	},
-	school: Number,
-	grade: Number
+	}
 });
 
-module.exports = mongoose.module('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema);
