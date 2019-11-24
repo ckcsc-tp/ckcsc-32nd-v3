@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/ckcsc-32nd/ckcsc-32nd.github.io#readme",
   "dependencies": {
+    "@hapi/joi": "^16.1.7",
     "accounty": "^2.0.0",
+    "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "dotenv": "^8.2.0",
@@ -27,6 +29,7 @@
     "http-errors": "^1.7.3",
     "jade": "^1.11.0",
     "jshashes": "^1.0.7",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.10",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.2",
