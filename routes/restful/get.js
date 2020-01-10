@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
 	res.render('index', {title: 'GET'});
 });
 
-///// ues /////
+///// use /////
 
 router.use('/login', require('../login/login.js'));
 
